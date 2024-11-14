@@ -1,0 +1,216 @@
+<!--<!DOCTYPE html> 
+<html> 
+  <style>
+    body{
+      height: 100vh;
+      background-color:green;
+    }
+
+    
+  </style>
+<body> 
+
+<video width="600" controls autoplay>
+    <source src="DS.mp4" type="video/mp4">
+  </video>
+</body> 
+</html>
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    .quiz-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .question h3 {
+      margin-bottom: 10px;
+    }
+    .question label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    #submit {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #submit:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .correct {
+      background-color: #c8e6c9;
+    }
+    .incorrect {
+      background-color: #ffcdd2;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h2>Quiz Test</h2>
+    <form id="quiz-form">
+      <div class="question">
+        <h3>1. What is the capital of France?</h3>
+        <label><input type="radio" name="q1" value="A"> A. Berlin</label>
+        <label><input type="radio" name="q1" value="B"> B. Madrid</label>
+        <label><input type="radio" name="q1" value="C"> C. Paris</label>
+        <label><input type="radio" name="q1" value="D"> D. Rome</label>
+      </div>
+
+      <div class="question">
+        <h3>2. Who wrote 'Romeo and Juliet'?</h3>
+        <label><input type="radio" name="q2" value="A"> A. Mark Twain</label>
+        <label><input type="radio" name="q2" value="B"> B. Charles Dickens</label>
+        <label><input type="radio" name="q2" value="C"> C. William Shakespeare</label>
+        <label><input type="radio" name="q2" value="D"> D. Jane Austen</label>
+      </div>
+
+      <div class="question">
+        <h3>3. Which planet is known as the Red Planet?</h3>
+        <label><input type="radio" name="q3" value="A"> A. Earth</label>
+        <label><input type="radio" name="q3" value="B"> B. Mars</label>
+        <label><input type="radio" name="q3" value="C"> C. Jupiter</label>
+        <label><input type="radio" name="q3" value="D"> D. Venus</label>
+      </div>
+
+      <div class="question">
+        <h3>4. What is the chemical symbol for water?</h3>
+        <label><input type="radio" name="q4" value="A"> A. H<sub>2</sub>O</label>
+        <label><input type="radio" name="q4" value="B"> B. O<sub>2</sub></label>
+        <label><input type="radio" name="q4" value="C"> C. CO<sub>2</sub></label>
+        <label><input type="radio" name="q4" value="D"> D. H</label>
+      </div>
+
+      <div class="question">
+        <h3>5. Who painted the Mona Lisa?</h3>
+        <label><input type="radio" name="q5" value="A"> A. Vincent van Gogh</label>
+        <label><input type="radio" name="q5" value="B"> B. Leonardo da Vinci</label>
+        <label><input type="radio" name="q5" value="C"> C. Pablo Picasso</label>
+        <label><input type="radio" name="q5" value="D"> D. Claude Monet</label>
+      </div>
+
+      <div class="question">
+        <h3>6. What is the largest mammal in the world?</h3>
+        <label><input type="radio" name="q6" value="A"> A. Elephant</label>
+        <label><input type="radio" name="q6" value="B"> B. Blue Whale</label>
+        <label><input type="radio" name="q6" value="C"> C. Giraffe</label>
+        <label><input type="radio" name="q6" value="D"> D. Hippopotamus</label>
+      </div>
+
+      <div class="question">
+        <h3>7. Which element has the atomic number 1?</h3>
+        <label><input type="radio" name="q7" value="A"> A. Helium</label>
+        <label><input type="radio" name="q7" value="B"> B. Hydrogen</label>
+        <label><input type="radio" name="q7" value="C"> C. Oxygen</label>
+        <label><input type="radio" name="q7" value="D"> D. Carbon</label>
+      </div>
+
+      <div class="question">
+        <h3>8. Who was the first President of the United States?</h3>
+        <label><input type="radio" name="q8" value="A"> A. Thomas Jefferson</label>
+        <label><input type="radio" name="q8" value="B"> B. Abraham Lincoln</label>
+        <label><input type="radio" name="q8" value="C"> C. George Washington</label>
+        <label><input type="radio" name="q8" value="D"> D. John Adams</label>
+      </div>
+
+      <div class="question">
+        <h3>9. Which country is known as the Land of the Rising Sun?</h3>
+        <label><input type="radio" name="q9" value="A"> A. China</label>
+        <label><input type="radio" name="q9" value="B"> B. South Korea</label>
+        <label><input type="radio" name="q9" value="C"> C. Japan</label>
+        <label><input type="radio" name="q9" value="D"> D. Thailand</label>
+      </div>
+
+      <div class="question">
+        <h3>10. What is the smallest prime number?</h3>
+        <label><input type="radio" name="q10" value="A"> A. 1</label>
+        <label><input type="radio" name="q10" value="B"> B. 2</label>
+        <label><input type="radio" name="q10" value="C"> C. 3</label>
+        <label><input type="radio" name="q10" value="D"> D. 5</label>
+      </div>
+
+      <button type="button" id="submit">Submit</button>
+      <div id="result"></div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', function() {
+      var correctAnswers = {
+        q1: 'C',
+        q2: 'C',
+        q3: 'B',
+        q4: 'A',
+        q5: 'B',
+        q6: 'B',
+        q7: 'B',
+        q8: 'C',
+        q9: 'C',
+        q10: 'B'
+      };
+
+      var score = 0;
+      var totalQuestions = 10;
+
+      var form = document.forms['quiz-form'];
+      for (var key in correctAnswers) {
+        var selectedOption = form[key].value;
+        var labels = form[key];
+
+        for (var i = 0; i < labels.length; i++) {
+          if (labels[i].value === correctAnswers[key]) {
+            labels[i].parentNode.style.backgroundColor = '#c8e6c9'; // Correct answer - green background
+          }
+          if (labels[i].checked && labels[i].value !== correctAnswers[key]) {
+            labels[i].parentNode.style.backgroundColor = '#ffcdd2'; // Incorrect answer - red background
+          }
+        }
+
+        if (selectedOption === correctAnswers[key]) {
+          score++;
+        }
+      }
+
+      var result = document.getElementById('result');
+      result.textContent = 'You scored ' + score + ' out of ' + totalQuestions;
+    });
+  </script>
+</body>
+</html>
+
